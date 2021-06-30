@@ -1,0 +1,27 @@
+.eror{
+    color: red;
+    margin-bottom: 15px;
+    animation:abcd 10s infinite;
+}
+@keyframes abcd{
+    0%{margin-left:60%;color: rgb(247, 205, 205);}
+    45%{margin-left:10px ;}
+    100%{margin-right:1%;color: rgb(255, 28, 28);}
+}
+.signup{
+    color: gray;
+}
+.form label{
+    margin: 10px;
+}
+.form button{
+    margin: 20px;
+   
+}
+.img{
+  width: 100%;
+}
+.col-5{
+    
+    background-color: rgb(245, 245, 245);
+}
