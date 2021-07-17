@@ -1,18 +1,15 @@
-
 import React from 'react';
-import './App.css';
-import Leyout from './components/Leyout'
-import './App.css';
+import Layout from './Layout'
 
-   
 
 function App() {
   
-  return (
-    <div>
-      <Leyout />
-      </div>
-  )
-}
+    return (
+        <div>
+            <Layout />
+        </div>
+    );
+    }
+
 
 export default App;

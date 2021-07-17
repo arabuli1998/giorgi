@@ -1,0 +1,107 @@
+.grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(51, 51, 51);
+    box-shadow: -2px 4px 15px black;
+}
+.nav{
+    width: 90%;
+min-height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.ul{
+    display: flex;
+    list-style: none;
+    flex:1 2 300px;
+    
+    justify-content: space-around;
+}
+.h2{
+    flex:2 2 100px;
+    font-size: 35px;
+    color: rgb(255, 136, 67);
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    
+}
+.h2 h1:hover{
+    color:black
+
+}
+.h2 h1{
+   color: rgb(113, 204, 235);
+    margin-top: -2px;
+}
+.li{
+    color: rgb(63, 63, 63);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+.link{
+    text-decoration: none;
+    text-decoration: wavy;
+}
+.li:hover{
+    color: rgb(113, 204, 235);
+    
+}
+#label{
+    color:black;
+    float: right;
+    font-size: 20px;
+    line-height: 69px;
+    float: right;
+    display: none;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width:950px){
+.li{
+    font-size: 15px;
+}
+.h2{
+    font-size: 25px
+}
+}
+@media (max-width:800px){
+    #label{
+        display: block;
+    }
+    .ul{
+        display:none;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background-color: rgb(0, 23, 61);
+        top: 70px;
+        left: 0;
+        text-align: center;
+        transition: 0.5s;
+        box-shadow: -2px 4px 15px black;
+        
+    }
+    .li{
+        display: block;
+        font-size: 20px;
+        color: white;
+        margin: 50px -10px;
+        line-height: 30px;
+    }
+    .li:hover{
+        color: rgb(255, 121, 31);
+    }
+    #check:checked ~ ul{
+        display: block;
+    }
+}
